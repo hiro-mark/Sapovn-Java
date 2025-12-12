@@ -8,8 +8,8 @@ public class Four {
 * boolean stores false/true
 * Identifiers cannot start with a digit, contain spaces nor use reserved keywords
  */
-        String name = "Mark";
-        System.out.println(name);
+        String myName = "Mark";
+        System.out.println(myName);
         int myAge = 16; // Declare final int if it is read-only, also same as defining constant
         System.out.println(myAge);
         int nextAge;
@@ -20,7 +20,7 @@ public class Four {
         char classRating = 'A';
         System.out.println(classRating);
 
-        System.out.println(name + " is " + myAge + " this year and will turn " + nextAge + " next year, but he has to wait for " + yearsLeft + " years left");
-        System.out.println(name + " has an " + classRating + " rating");
+        System.out.println(myName + " is " + myAge + " this year and will turn " + nextAge + " next year, but he has to wait for " + yearsLeft + " years left");
+        System.out.println(myName + " has an " + classRating + " rating");
     }
 }
