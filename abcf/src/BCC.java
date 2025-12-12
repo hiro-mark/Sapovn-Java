@@ -1,19 +1,13 @@
 public class BCC {
     public static void main(String[] args) {
-        int a = 1;
-        int b = 1;
-        int c;
-        while (a<=10) {
-            if (b<=10) {
-                c = a * b;
-                System.out.println(c);
-                b++;
+        int a;
+        int b;
+        for (a = 1; a <= 10; a++) {
+            System.out.println("Bang cuu chuong cho " + a + " la");
+            for (b = 1; b <= 10; b++) {
+                System.out.println(a*b);
             }
-            else {
-                b = 1;
-                a++;
-                System.out.println("Bảng cửu chương cho " + (a-1) + " bên trên");
-            }
+            b = 1;
         }
     }
 }

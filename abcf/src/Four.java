@@ -5,22 +5,22 @@ public class Four {
 * int stores integer
 * float stores decimals/FPNs
 * char stores characters (single quotes)
-* boolean stores 0/1
+* boolean stores false/true
 * Identifiers cannot start with a digit, contain spaces nor use reserved keywords
  */
         String name = "Mark";
         System.out.println(name);
-        int Num = 16; // Declare final int if it is read-only, also same as defining constant
-        System.out.println(Num);
-        int num;
-        num = 17;
-        System.out.println(num);
-        float Year = 78/365f;
-        System.out.println(Year);
-        char Rating = 'A';
-        System.out.println(Rating);
+        int myAge = 16; // Declare final int if it is read-only, also same as defining constant
+        System.out.println(myAge);
+        int nextAge;
+        nextAge = 17;
+        System.out.println(nextAge);
+        float yearsLeft = 78/365f;
+        System.out.println(yearsLeft);
+        char classRating = 'A';
+        System.out.println(classRating);
 
-        System.out.println(name + " is " + Num + " this year and will turn " + num + " next year, but he has to wait for " + Year + " years left");
-        System.out.println(name + " has an " + Rating + " rating");
+        System.out.println(name + " is " + myAge + " this year and will turn " + nextAge + " next year, but he has to wait for " + yearsLeft + " years left");
+        System.out.println(name + " has an " + classRating + " rating");
     }
 }
