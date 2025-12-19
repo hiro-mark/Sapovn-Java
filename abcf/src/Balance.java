@@ -4,4 +4,7 @@ public class Balance {
         return userBalance;
     }
 
+    public void setUserBalance(int newUserBalance) {
+        this.userBalance = newUserBalance;
+    }
 }
