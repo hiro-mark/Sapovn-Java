@@ -31,5 +31,6 @@ public class ProductStorage {
                         String::concat);
         System.out.println("Out of stock products: ");
         System.out.println(productOutOfStock);
+        System.out.println();
     }
 }
