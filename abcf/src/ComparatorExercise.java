@@ -39,5 +39,17 @@ public class ComparatorExercise {
         System.out.println();
         System.out.println("Items sorted by alphabetical order:");
         shopValue.forEach((key, value) -> System.out.println("Item: " + key + ", price: $" + value));
+        Map <String, Integer> overLimit = shopItems.entrySet().stream()
+                .filter(e -> e.getValue() > 100)
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new
+                ));
+        System.out.println();
+        System.out.println("Items sorted by value over $100: ");
+        overLimit.forEach((key, value) -> System.out.println("Item: " + key + ", price: $" + value));
     }
 }
